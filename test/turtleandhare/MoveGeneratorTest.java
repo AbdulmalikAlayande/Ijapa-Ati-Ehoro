@@ -22,6 +22,5 @@ public class MoveGeneratorTest {
 		int generatedMove = MovePercentageGenerator.generateMove(ehoro);
 		assertThat(generatedMove).isGreaterThan(BigInteger.ZERO.intValue());
 		assertThat(generatedMove).isLessThanOrEqualTo(BigInteger.TEN.intValue());
-		
 	}
 }

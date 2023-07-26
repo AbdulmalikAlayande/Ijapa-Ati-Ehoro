@@ -6,15 +6,11 @@ import java.math.BigInteger;
 
 public class Hare extends Racer {
 	
-	int DEFAULT_POSITION = BigInteger.ONE.intValue();
+	
 	int position = BigInteger.ONE.intValue();
 	
 	public int getPosition() {
 		return position;
-	}
-	
-	public void setPosition(int position) {
-		this.position = position;
 	}
 	
 	public void move(HareMoveType moveType) {

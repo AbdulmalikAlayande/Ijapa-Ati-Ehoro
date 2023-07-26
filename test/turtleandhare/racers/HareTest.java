@@ -64,4 +64,6 @@ public class HareTest {
 		ehoro.move(SMALL_SLIP);
 		assertThat(ehoro.getPosition()).isEqualTo(BigInteger.valueOf(8).intValue());
 	}
+	
+	
 }
