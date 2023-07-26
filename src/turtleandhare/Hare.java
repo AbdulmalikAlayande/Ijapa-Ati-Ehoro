@@ -2,7 +2,7 @@ package turtleandhare;
 
 public class Hare {
 	
-	int position;
+	int position = 1;
 	
 	public int getPosition() {
 		return position;
@@ -13,6 +13,7 @@ public class Hare {
 	}
 	
 	public void move(HareMoveType moveType) {
-	
+		if (moveType == HareMoveType.SLEEP)
+			position = 1;
 	}
 }
