@@ -1,4 +1,4 @@
-package turtleandhare.racers;
+package turtleandhare.contenders;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

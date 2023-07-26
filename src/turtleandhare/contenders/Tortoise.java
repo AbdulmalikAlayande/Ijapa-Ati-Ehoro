@@ -1,10 +1,10 @@
-package turtleandhare.racers;
+package turtleandhare.contenders;
 
 import turtleandhare.movetypes.TortoiseMoveType;
 
 import java.math.BigInteger;
 
-public class Tortoise extends Racer{
+public class Tortoise extends Contender {
 	
 	private int position = BigInteger.ONE.intValue();
 	

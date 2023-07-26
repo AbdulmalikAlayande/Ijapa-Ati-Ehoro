@@ -1,8 +1,8 @@
 package turtleandhare;
 
 import org.junit.jupiter.api.Test;
-import turtleandhare.racers.Hare;
-import turtleandhare.racers.Tortoise;
+import turtleandhare.contenders.Hare;
+import turtleandhare.contenders.Tortoise;
 
 import java.math.BigInteger;
 

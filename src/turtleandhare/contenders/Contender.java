@@ -1,8 +1,8 @@
-package turtleandhare.racers;
+package turtleandhare.contenders;
 
 import java.math.BigInteger;
 
-public class Racer {
+public class Contender {
 	
 	int DEFAULT_POSITION = BigInteger.ONE.intValue();
 	private int position = DEFAULT_POSITION;

@@ -1,10 +1,10 @@
-package turtleandhare.racers;
+package turtleandhare.contenders;
 
 import turtleandhare.movetypes.HareMoveType;
 
 import java.math.BigInteger;
 
-public class Hare extends Racer {
+public class Hare extends Contender {
 	
 	
 	int position = BigInteger.ONE.intValue();

@@ -1,7 +1,7 @@
 package turtleandhare;
 
-import turtleandhare.racers.Racer;
-import turtleandhare.racers.Tortoise;
+import turtleandhare.contenders.Contender;
+import turtleandhare.contenders.Tortoise;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
@@ -10,7 +10,7 @@ public class MovePercentageGenerator {
 	
 	static SecureRandom randomNumberGenerator = new SecureRandom();
 
-	public static int generateMove(Racer racer){
+	public static int generateMove(Contender racer){
 		if (racer instanceof Tortoise)
 			return generateMoveForTortoise();
 		return generateMoveForHare();
