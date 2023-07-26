@@ -11,4 +11,8 @@ public class Hare {
 	public void setPosition(int position) {
 		this.position = position;
 	}
+	
+	public void move(HareMoveType moveType) {
+	
+	}
 }

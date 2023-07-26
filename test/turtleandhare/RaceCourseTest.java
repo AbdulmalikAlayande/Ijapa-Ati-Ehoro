@@ -58,4 +58,24 @@ public class RaceCourseTest {
 		ijapa.setPosition(69);
 		assertThatThrownBy(()->ijapa.move(FAST_PLOD)).isInstanceOf(RaceEndsException.class);
 	}
+	
+	@Test void testThatHareCanDoSleepAndNoMoveAtAll(){
+		assertThat(ehoro.getPosition()).isEqualTo(BigInteger.ONE.intValue());
+		ehoro.move(HareMoveType.SLEEP);
+		assertThat(ijapa.getPosition()).isEqualTo(BigInteger.ONE.intValue());
+	}
+	@Test void testThatHareCanBigHop(){
+	
+	}
+	@Test void testThatHareCanDoBigSlip(){
+	
+	}
+	
+	@Test void testThatHareCanDoSmallHop(){
+	
+	}
+	
+	@Test void testThatHareCanDoSmallSlip(){
+	
+	}
 }
