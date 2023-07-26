@@ -4,7 +4,7 @@ import turtleandhare.movetypes.HareMoveType;
 
 import java.math.BigInteger;
 
-public class Hare {
+public class Hare extends Racer {
 	
 	int DEFAULT_POSITION = BigInteger.ONE.intValue();
 	int position = BigInteger.ONE.intValue();

@@ -4,7 +4,7 @@ import turtleandhare.movetypes.TortoiseMoveType;
 
 import java.math.BigInteger;
 
-public class Tortoise {
+public class Tortoise extends Racer{
 	
 	private int position = 1;
 	
