@@ -1,4 +1,4 @@
-package turtleandhare;
+package turtleandhare.exceptions;
 
 public class RaceEndsException extends RuntimeException{
 	

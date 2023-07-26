@@ -1,15 +1,17 @@
-package turtleandhare;
+package turtleandhare.racers;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import turtleandhare.exceptions.RaceEndsException;
+import turtleandhare.racers.Tortoise;
 
 import java.math.BigInteger;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
-import static turtleandhare.TortoiseMoveType.FAST_PLOD;
-import static turtleandhare.TortoiseMoveType.SLIP;
+import static turtleandhare.movetypes.TortoiseMoveType.FAST_PLOD;
+import static turtleandhare.movetypes.TortoiseMoveType.SLIP;
 
 public class TortoiseTest {
 	Tortoise ijapa;

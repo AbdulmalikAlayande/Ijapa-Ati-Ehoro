@@ -1,5 +1,8 @@
 package turtleandhare;
 
+import turtleandhare.rewards.Carrot;
+import turtleandhare.rewards.Lettuce;
+
 public class Pail {
 	
 	private Carrot[] carrots;

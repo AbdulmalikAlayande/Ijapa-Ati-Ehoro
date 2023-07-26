@@ -1,4 +1,6 @@
-package turtleandhare;
+package turtleandhare.racers;
+
+import turtleandhare.movetypes.HareMoveType;
 
 public class Hare {
 	

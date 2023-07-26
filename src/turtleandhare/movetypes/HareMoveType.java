@@ -1,4 +1,4 @@
-package turtleandhare;
+package turtleandhare.movetypes;
 
 public enum HareMoveType {
 
