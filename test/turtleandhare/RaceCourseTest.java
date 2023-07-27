@@ -51,9 +51,11 @@ public class RaceCourseTest {
 	
 	@Test void race(){
 		assertNull(raceCourse.getContenders());
-		assertThat(raceCourse.getSquares().length).isEqualTo(BigInteger.valueOf(70).intValue());
+		assertThat(raceCourse.getSquares().length).isEqualTo(BigInteger.valueOf(71).intValue());
 		Contender ijapa = new Tortoise();
+		ijapa.setName("T");
 		Contender ehoro = new Hare();
+		ehoro.setName("H");
 		raceCourse.setContenders(new Contender[]{ehoro, ijapa});
 		raceCourse.setTrackReady();
 		raceCourse.race();
