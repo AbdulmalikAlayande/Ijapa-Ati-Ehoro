@@ -12,7 +12,15 @@ public class Tortoise extends Contender {
 		return position;
 	}
 	
-	
+	public int move(int move){
+		if (move < BigInteger.valueOf(6).intValue())
+			move(TortoiseMoveType.FAST_PLOD);
+		else if (move == 6 || move == 7)
+			move(TortoiseMoveType.SLIP);
+		else if (move > 7 && move < 11)
+			move(TortoiseMoveType.SLOW_PLOD);
+		return position;
+	}
 	public void move(TortoiseMoveType moveType) {
 		if (moveType == TortoiseMoveType.FAST_PLOD)
 			position += BigInteger.valueOf(3).intValue();

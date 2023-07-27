@@ -13,6 +13,23 @@ public class Hare extends Contender {
 		return position;
 	}
 	
+	public int move(int numberOfMoves){
+		if (numberOfMoves < BigInteger.valueOf(3).intValue())
+			move(HareMoveType.SLEEP);
+		else if (numberOfMoves < BigInteger.valueOf(5).intValue() && numberOfMoves > BigInteger.valueOf(2).intValue())
+			move(HareMoveType.BIG_HOP);
+		else if (numberOfMoves == BigInteger.valueOf(5).intValue()) {
+			move(HareMoveType.BIG_SLIP);
+		}
+		else if (numberOfMoves > BigInteger.valueOf(5).intValue() && numberOfMoves < BigInteger.valueOf(9).intValue()) {
+			move(HareMoveType.SMALL_HOP);
+		}
+		else if (numberOfMoves == 9 || numberOfMoves == 10) {
+			move(HareMoveType.SMALL_SLIP);
+		}
+		return position;
+	}
+	
 	public void move(HareMoveType moveType) {
 		if (moveType == HareMoveType.SLEEP)
 			position = DEFAULT_POSITION;
